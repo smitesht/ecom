@@ -84,10 +84,22 @@ const deleteProduct = async (req, resp) => {
   }
 };
 
+const addBulkProducts = async (req, resp) => {
+  try {
+    const prodarry = req.body;
+    const prods = await Product.bulkCreate(prodarry);
+
+    resp.status(200).json({ message: "Created bulk product" });
+  } catch (err) {
+    req.status(500).json({ message: err });
+  }
+};
+
 module.exports = {
   newProduct,
   getAll,
   getById,
   updateProduct,
   deleteProduct,
+  addBulkProducts,
 };

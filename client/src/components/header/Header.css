@@ -1,0 +1,32 @@
+.header-wrapper {
+  width: 100%;
+  height: var(--nav-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--nav-bg-color);
+}
+
+.brand {
+  margin: 0 2rem;
+  font-family: var(--brand-font);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navbar {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 2rem;
+}

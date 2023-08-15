@@ -1,0 +1,9 @@
+.footer-wrapper {
+  width: 100%;
+  height: var(--footer-height);
+  background-color: var(--nav-bg-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--primary-color);
+}

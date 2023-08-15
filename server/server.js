@@ -9,6 +9,12 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+const corsOption = {
+  origin: "http://localhost:8181/",
+};
+
+app.use(cors());
+
 app.use("/api/category", categoryRouter);
 app.use("/api/product", productRouter);
 
